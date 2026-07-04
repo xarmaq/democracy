@@ -1,0 +1,13 @@
+.agents/
+.claude/
+skills/
+skills-lock.json
+*.zip
+*.exe
+*.msi
+*.pdf
+*.ppt
+*.xlsx
+.DS_Store
+Thumbs.db
+gitdata/

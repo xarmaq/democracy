@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Democracy — Sofia Youth Forum 2026</title>
+  <meta name="description" content="Better Democracy runs workshops and lectures on civic power across Europe. Next: a two-day youth forum in Sofia, Bulgaria — join as a participant or apply to speak.">
+  <link rel="icon" href="assets/logo-mark.png">
+  <meta name="theme-color" content="#f7f4ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#080d20" media="(prefers-color-scheme: dark)">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('bd-theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__fill" id="scrollProgress"></div></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Better Democracy — home">
+        <span class="brand__tile"><img src="assets/logo-mark.png" alt="" width="30" height="30"></span>
+        <span class="brand__name">better democracy</span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="#about">Idea</a>
+        <a href="#sofia">Sofia 2026</a>
+        <a href="#program">Program</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M12 2.5v2.4"/><path d="M12 19.1v2.4"/><path d="M2.5 12h2.4"/><path d="M19.1 12h2.4"/>
+              <path d="M5.2 5.2l1.7 1.7"/><path d="M17.1 17.1l1.7 1.7"/><path d="M18.8 5.2l-1.7 1.7"/><path d="M6.9 17.1l-1.7 1.7"/>
+            </g>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M20.4 14.2A8.6 8.6 0 0 1 9.8 3.6a8.6 8.6 0 1 0 10.6 10.6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <a class="btn btn--primary btn--sm site-header__cta" href="#register">Register</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">Idea</a>
+      <a href="#sofia">Sofia 2026</a>
+      <a href="#program">Program</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--primary" href="#register">Register</a>
+    </div>
+  </header>
+
+  <!-- side index rail — the printed table of contents, follows scroll -->
+  <nav class="rail" aria-label="Page sections">
+    <a href="#about"><span class="rail__num">01</span><span class="rail__lbl">Idea</span></a>
+    <a href="#sofia"><span class="rail__num">02</span><span class="rail__lbl">Sofia 2026</span></a>
+    <a href="#program"><span class="rail__num">03</span><span class="rail__lbl">Program</span></a>
+    <a href="#speakers"><span class="rail__num">04</span><span class="rail__lbl">Speakers</span></a>
+    <a href="#register"><span class="rail__num">05</span><span class="rail__lbl">Register</span></a>
+    <a href="#faq"><span class="rail__num">06</span><span class="rail__lbl">FAQ</span></a>
+  </nav>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero halftone">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow hero__stagger"><span class="star">★</span> Workshops &amp; lectures across Europe</p>
+          <h1 class="hero__title hero__stagger">
+            <span class="line"><span class="line__inner">Democracy is a skill.</span></span>
+            <span class="line"><span class="line__inner"><em>Practice it.</em></span></span>
+          </h1>
+          <p class="lead hero__stagger">
+            A two-day youth forum in <strong>Sofia</strong> — workshops, debate,
+            and one declaration handed to ministers on day two.
+          </p>
+          <div class="hero__cta hero__stagger">
+            <a class="btn btn--primary btn--mag" href="#register" data-tab-link="participant">Join as participant</a>
+            <a class="btn btn--ghost btn--mag" href="#register" data-tab-link="speaker">Apply to speak</a>
+          </div>
+          <div class="hero__meta hero__stagger">
+            <span class="chip chip--blue">
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+              Sofia · 18–19 Sep 2026
+            </span>
+            <span class="chip">Free · 120 seats</span>
+            <span class="chip">Ages 16–30</span>
+          </div>
+        </div>
+
+        <div class="hero__vis">
+          <div class="ballot" data-tilt>
+            <div class="ballot__top">
+              <span class="ballot__serial">Ballot № BD-2026-0117</span>
+              <span class="ballot__tag">practice round</span>
+            </div>
+            <p class="ballot__q">Should voting be mandatory?</p>
+            <p class="ballot__hint">Cast a vote — then come argue it in Sofia.</p>
+            <div class="ballot__opts">
+              <button class="ballot__opt" type="button" data-vote="yes">Yes</button>
+              <button class="ballot__opt" type="button" data-vote="no">No</button>
+            </div>
+            <div class="ballot__reveal">
+              <div class="ballot__result" aria-live="polite">
+                <div class="ballot__row">
+                  <span class="ballot__opt-label">Yes</span>
+                  <span class="ballot__bar"><i class="ballot__fill ballot__fill--yes"></i></span>
+                  <b class="ballot__pct" id="pctYes">0%</b>
+                </div>
+                <div class="ballot__row">
+                  <span class="ballot__opt-label">No</span>
+                  <span class="ballot__bar"><i class="ballot__fill ballot__fill--no"></i></span>
+                  <b class="ballot__pct" id="pctNo">0%</b>
+                </div>
+                <p class="ballot__note"><b id="ballotTotal">1,247</b> practice ballots cast · <a href="#program">debate it live in Sofia →</a></p>
+              </div>
+            </div>
+            <svg class="ballot__stamp" viewBox="0 0 120 120" width="104" height="104" aria-hidden="true">
+              <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="3.5"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M60 24l2.6 5.6 6.2.8-4.6 4.2 1.2 6.1-5.4-3-5.4 3 1.2-6.1-4.6-4.2 6.2-.8z" fill="currentColor"/>
+              <text x="60" y="68" text-anchor="middle" class="ballot__stamp-txt">VOTED</text>
+              <text x="60" y="86" text-anchor="middle" class="ballot__stamp-date">18–19 SEP 2026</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <span class="hero__side" aria-hidden="true">est. 2021 · Tallinn → Warsaw → Lisbon → Sofia</span>
+
+      <a class="hero__scroll-cue" href="#about" aria-label="Scroll to content">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v14m0 0l-5-5m5 5l5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ CITIES MARQUEE ============ -->
+    <section class="marquee" aria-label="Cities we have visited">
+      <div class="marquee__skew" id="marqueeSkew">
+      <div class="marquee__track" id="marqueeTrack">
+        <span class="marquee__group">
+          Berlin <i>★</i> Warsaw <i>★</i> Lisbon <i>★</i> Vienna <i>★</i> Prague <i>★</i> Tallinn <i>★</i> Amsterdam <i>★</i> Ljubljana <i>★</i> Copenhagen <i>★</i> Kraków <i>★</i> Madrid <i>★</i> Athens <i>★</i> Helsinki <i>★</i> Dublin <i>★</i> Bucharest <i>★</i> Zagreb <i>★</i> Paris <i>★</i> Rome <i>★</i>
+        </span><span class="marquee__group" aria-hidden="true">
+          Berlin <i>★</i> Warsaw <i>★</i> Lisbon <i>★</i> Vienna <i>★</i> Prague <i>★</i> Tallinn <i>★</i> Amsterdam <i>★</i> Ljubljana <i>★</i> Copenhagen <i>★</i> Kraków <i>★</i> Madrid <i>★</i> Athens <i>★</i> Helsinki <i>★</i> Dublin <i>★</i> Bucharest <i>★</i> Zagreb <i>★</i> Paris <i>★</i> Rome <i>★</i>
+        </span>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" id="impact">
+      <div class="container stats__grid" data-reveal-group>
+        <div class="stat" data-reveal>
+          <span class="stat__value"><span class="ticker" data-ticker="43">0</span></span>
+          <span class="stat__label">events since 2021</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__value"><span class="ticker" data-ticker="17">0</span></span>
+          <span class="stat__label">European countries</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__value"><span class="ticker" data-ticker="2840" data-ticker-suffix="+">0</span></span>
+          <span class="stat__label">alumni</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__value"><span class="ticker" data-ticker="120">0</span></span>
+          <span class="stat__label">speakers &amp; facilitators</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="sec-num">01 — The idea</p>
+          <h2><span class="line"><span class="line__inner">A travelling school of <em>practical</em> democracy</span></span></h2>
+          <p class="section-head__sub">
+            Since 2021, one idea: democracy lives in rooms full of people who disagree well.
+          </p>
+        </div>
+
+        <div class="ledger" data-reveal-group>
+          <article class="ledger__row" data-reveal>
+            <span class="ledger__num" aria-hidden="true">01</span>
+            <div class="ledger__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 19.5V6a2 2 0 0 1 2-2h13v14H6.5A2.5 2.5 0 0 0 4 20.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H19v3.5H6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="ledger__title">Learn</h3>
+            <p class="ledger__text">Talks by people who run assemblies, newsrooms and city budgets.</p>
+          </article>
+          <article class="ledger__row" data-reveal>
+            <span class="ledger__num" aria-hidden="true">02</span>
+            <div class="ledger__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M8 12h8M8 8.5h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M21 11.5a7.5 7.5 0 0 1-7.5 7.5H12l-4.5 3v-3.6A7.5 7.5 0 1 1 21 11.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="ledger__title">Debate</h3>
+            <p class="ledger__text">Structured disagreement — argue positions you don&rsquo;t hold.</p>
+          </article>
+          <article class="ledger__row" data-reveal>
+            <span class="ledger__num" aria-hidden="true">03</span>
+            <div class="ledger__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M13 2 4.5 13.5H11L9.5 22 19 9.5h-6.5L13 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="ledger__title">Act</h3>
+            <p class="ledger__text">Every forum ends with something real. In Sofia: a declaration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOFIA 2026 SPOTLIGHT ============ -->
+    <section class="section event" id="sofia">
+      <div class="container">
+        <div class="event__card" data-reveal>
+          <svg class="seal" viewBox="0 0 120 120" width="108" height="108" aria-hidden="true">
+            <defs>
+              <path id="sealCircle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/>
+            </defs>
+            <circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.9"/>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+            <g class="seal__spin">
+              <text class="seal__text">
+                <textPath href="#sealCircle" startOffset="0">SOFIA YOUTH FORUM ★ 18–19 SEP 2026 ★ BETTER DEMOCRACY ★</textPath>
+              </text>
+            </g>
+            <path d="M60 47l3.5 7.6 8.3 1-6.1 5.7 1.6 8.2L60 65.4l-7.3 4.1 1.6-8.2-6.1-5.7 8.3-1z" fill="currentColor"/>
+          </svg>
+
+          <div class="event__clip" aria-hidden="true"><span class="event__wm">SOFIA</span></div>
+
+          <div class="event__grid">
+            <div class="event__main">
+              <div class="event__head">
+                <p class="eyebrow eyebrow--onblue">02 — Next event</p>
+                <h2 class="event__title"><span class="line"><span class="line__inner">Sofia Youth <em>Forum</em></span></span></h2>
+                <p class="event__sub">Day one: write the Sofia Youth Declaration. Day two: put it on ministers&rsquo; desks.</p>
+              </div>
+
+              <div class="countdown" role="timer" aria-label="Time until the event">
+                <div class="countdown__cell"><span class="countdown__num" id="cdDays">–</span><span class="countdown__label">days</span></div>
+                <span class="countdown__sep" aria-hidden="true">:</span>
+                <div class="countdown__cell"><span class="countdown__num" id="cdHours">–</span><span class="countdown__label">hours</span></div>
+                <span class="countdown__sep" aria-hidden="true">:</span>
+                <div class="countdown__cell"><span class="countdown__num" id="cdMins">–</span><span class="countdown__label">minutes</span></div>
+                <span class="countdown__sep" aria-hidden="true">:</span>
+                <div class="countdown__cell"><span class="countdown__num" id="cdSecs">–</span><span class="countdown__label">seconds</span></div>
+              </div>
+
+              <p class="event__admit" aria-hidden="true">Admits one delegate · ages 16–30 · void where democracy is prohibited</p>
+            </div>
+
+            <aside class="event__stub" aria-label="Event details">
+              <div class="event__facts" data-reveal-group>
+                <div class="fact" data-reveal>
+                  <span class="fact__label">Dates</span>
+                  <span class="fact__value">18–19 Sep 2026</span>
+                </div>
+                <div class="fact" data-reveal>
+                  <span class="fact__label">Venue</span>
+                  <span class="fact__value">John Atanasoff Forum, Sofia Tech Park</span>
+                </div>
+                <div class="fact" data-reveal>
+                  <span class="fact__label">Language</span>
+                  <span class="fact__value">English · BG interpretation</span>
+                </div>
+                <div class="fact" data-reveal>
+                  <span class="fact__label">Cost</span>
+                  <span class="fact__value">Free · apply by 30 Aug</span>
+                </div>
+              </div>
+              <a class="btn btn--primary btn--mag event__cta" href="#register" data-tab-link="participant">Claim your seat</a>
+              <div class="event__barcode" aria-hidden="true">
+                <span class="event__barcode-num">BD · 2026 · 0918 · SOF</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAM / SCHEDULE ============ -->
+    <section class="section program" id="program">
+      <div class="container container--mid">
+        <div class="section-head" data-reveal>
+          <p class="sec-num">03 — Program</p>
+          <h2><span class="line"><span class="line__inner">Two days, <em>one declaration</em></span></span></h2>
+          <p class="section-head__sub">The strip below is the whole day, drawn to scale — tap a block to jump in. Labs are capped at 25.</p>
+        </div>
+
+        <div class="sched" data-reveal>
+          <div class="seg seg--sched" role="tablist" aria-label="Forum days">
+            <span class="seg__indicator" id="schedIndicator" aria-hidden="true"></span>
+            <button class="seg__btn is-active" id="tabDay1" type="button" role="tab" aria-selected="true" aria-controls="schedDay1" data-day="day1">
+              <b>Day 1 · Fri 18</b><small>Workshops &amp; labs</small>
+            </button>
+            <button class="seg__btn" id="tabDay2" type="button" role="tab" aria-selected="false" aria-controls="schedDay2" data-day="day2">
+              <b>Day 2 · Sat 19</b><small>Ministers &amp; policymakers</small>
+            </button>
+          </div>
+
+          <!-- Day 1 -->
+          <div class="sched__panel is-active" id="schedDay1" role="tabpanel" aria-labelledby="tabDay1">
+            <div class="sched__map" style="--total: 540">
+              <div class="sched__map-top">
+                <p class="sched__map-caption" aria-hidden="true">Fri 18 Sept · 09:00 – 18:00</p>
+                <ul class="sched__map-legend" aria-hidden="true">
+                  <li><i data-type="keynote"></i>keynote</li>
+                  <li><i data-type="session"></i>session</li>
+                  <li><i data-type="lab"></i>workshop / lab</li>
+                  <li><i data-type="break"></i>break</li>
+                </ul>
+              </div>
+              <div class="sched__map-track" role="group" aria-label="Day 1 at a glance — jump to a session">
+                <button type="button" class="sched__map-block" data-type="break" data-jump="0" style="--m: 30" aria-label="09:00 – 09:30 · Registration &amp; networking"></button>
+                <button type="button" class="sched__map-block" data-type="keynote" data-jump="1" style="--m: 30" aria-label="09:30 – 10:00 · Opening ceremony &amp; keynote — Bjørn Berge"></button>
+                <button type="button" class="sched__map-block" data-type="session" data-jump="2" style="--m: 45" aria-label="10:00 – 10:45 · Politics, inequality &amp; education — Andreas Schleicher"></button>
+                <button type="button" class="sched__map-block" data-type="break" data-jump="3" style="--m: 15" aria-label="10:45 – 11:00 · Coffee break"></button>
+                <button type="button" class="sched__map-block" data-type="session" data-jump="4" style="--m: 45" aria-label="11:00 – 11:45 · Corruption, transparency &amp; public trust — Helmut K. Anheier &amp; Michiel van Hulten"></button>
+                <button type="button" class="sched__map-block" data-type="session" data-jump="5" style="--m: 45" aria-label="11:45 – 12:30 · Mindful activism — Jamila Raqib"></button>
+                <button type="button" class="sched__map-block" data-type="break" data-jump="6" style="--m: 60" aria-label="12:30 – 13:30 · Lunch &amp; networking"></button>
+                <button type="button" class="sched__map-block" data-type="workshop" data-jump="7" style="--m: 60" aria-label="13:30 – 14:30 · Critical thinking 101 — Claire Wardle"></button>
+                <button type="button" class="sched__map-block" data-type="session" data-jump="8" style="--m: 60" aria-label="14:30 – 15:30 · Case study: Bulgaria — Ivan Krastev"></button>
+                <button type="button" class="sched__map-block" data-type="break" data-jump="9" style="--m: 15" aria-label="15:30 – 15:45 · Coffee break"></button>
+                <button type="button" class="sched__map-block" data-type="lab" data-jump="10" style="--m: 90" aria-label="15:45 – 17:15 · Youth policy lab — Ivan Krastev"></button>
+                <button type="button" class="sched__map-block" data-type="lab" data-jump="11" style="--m: 30" aria-label="17:15 – 17:45 · Drafting the Sofia Youth Declaration — Petra Bayr"></button>
+                <button type="button" class="sched__map-block" data-type="session" data-jump="12" style="--m: 15" aria-label="17:45 – 18:00 · Closing reflection — Maria Ressa"></button>
+              </div>
+              <div class="sched__map-hours" aria-hidden="true">
+                <span style="--h: 0">09</span><span style="--h: 60">10</span><span style="--h: 120">11</span><span style="--h: 180">12</span><span style="--h: 240">13</span><span style="--h: 300">14</span><span style="--h: 360">15</span><span style="--h: 420">16</span><span style="--h: 480">17</span><span class="is-end" style="--h: 540">18</span>
+              </div>
+            </div>
+            <div class="sched__item sched__item--break">
+              <div class="sched__row"><span class="sched__time">09:00</span><span class="sched__title">Registration &amp; networking</span><span class="badge badge--soft">welcome</span></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>09:30</b><small>10:00</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Opening ceremony &amp; keynote</span>
+                  <span class="sched__who"><i class="sched__ini" aria-hidden="true">BB</i>Bjørn Berge</span>
+                </span>
+                <span class="badge badge--yellow">keynote</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>“The State of Democracy in Europe: Why Youth Matter” — the opening address of the forum.</p></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>10:00</b><small>10:45</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Politics, inequality &amp; education</span>
+                  <span class="sched__who"><i class="sched__ini" aria-hidden="true">AS</i>Andreas Schleicher</span>
+                </span>
+                <span class="badge">session</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>How political decisions shape educational opportunity and social mobility.</p></div>
+            </div>
+            <div class="sched__item sched__item--break">
+              <div class="sched__row"><span class="sched__time">10:45</span><span class="sched__title">Coffee break</span><span class="badge badge--soft">15 min</span></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>11:00</b><small>11:45</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Corruption, transparency &amp; public trust</span>
+                  <span class="sched__who"><span class="sched__inis"><i class="sched__ini" aria-hidden="true">HA</i><i class="sched__ini" aria-hidden="true">MH</i></span>Helmut K. Anheier &amp; Michiel van Hulten</span>
+                </span>
+                <span class="badge">session</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>How corruption impacts education, public services — and democracy itself.</p></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>11:45</b><small>12:30</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Mindful activism</span>
+                  <span class="sched__who"><i class="sched__ini" aria-hidden="true">JR</i>Jamila Raqib</span>
+                </span>
+                <span class="badge">session</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>From protest to policy: creating change through constructive civic engagement.</p></div>
+            </div>
+            <div class="sched__item sched__item--break">
+              <div class="sched__row"><span class="sched__time">12:30</span><span class="sched__title">Lunch &amp; networking</span><span class="badge badge--soft">60 min</span></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>13:30</b><small>14:30</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Critical thinking 101</span>
+                  <span class="sched__who"><i class="sched__ini" aria-hidden="true">CW</i>Claire Wardle</span>
+                </span>
+                <span class="badge">workshop</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>“How to Think, Not What to Think” — media literacy, misinformation, cognitive biases.</p></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>14:30</b><small>15:30</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Case study: Bulgaria</span>
+                  <span class="sched__who"><i class="sched__ini" aria-hidden="true">IK</i>Ivan Krastev</span>
+                </span>
+                <span class="badge">session</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>Building democratic resilience — Bulgaria as a real-world case, strictly non-partisan.</p></div>
+            </div>
+            <div class="sched__item sched__item--break">
+              <div class="sched__row"><span class="sched__time">15:30</span><span class="sched__title">Coffee break</span><span class="badge badge--soft">15 min</span></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>15:45</b><small>17:15</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Youth policy lab</span>
+                  <span class="sched__who"><i class="sched__ini" aria-hidden="true">IK</i>Ivan Krastev</span>
+                </span>
+                <span class="badge badge--blue">lab</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>Teams co-create policy recommendations on democracy, education, transparency and youth participation.</p></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>17:15</b><small>17:45</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Drafting the Sofia Youth Declaration</span>
+                  <span class="sched__who"><i class="sched__ini" aria-hidden="true">PB</i>Petra Bayr</span>
+                </span>
+                <span class="badge badge--blue">lab</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>Groups merge their ideas into one common declaration.</p></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>17:45</b><small>18:00</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Closing reflection</span>
+                  <span class="sched__who"><i class="sched__ini" aria-hidden="true">MR</i>Maria Ressa</span>
+                </span>
+                <span class="badge">session</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>The declaration is read aloud — and prepped for day two with ministers and policymakers.</p></div>
+            </div>
+          </div>
+
+          <!-- Day 2 -->
+          <div class="sched__panel" id="schedDay2" role="tabpanel" aria-labelledby="tabDay2" hidden>
+            <div class="sched__map" style="--total: 270">
+              <div class="sched__map-top">
+                <p class="sched__map-caption" aria-hidden="true">Sat 19 Sept · 09:30 – 14:00 · National Assembly</p>
+                <ul class="sched__map-legend" aria-hidden="true">
+                  <li><i data-type="keynote"></i>keynote</li>
+                  <li><i data-type="session"></i>session</li>
+                  <li><i data-type="lab"></i>workshop / lab</li>
+                  <li><i data-type="break"></i>break</li>
+                </ul>
+              </div>
+              <div class="sched__map-track" role="group" aria-label="Day 2 at a glance — jump to a session">
+                <button type="button" class="sched__map-block" data-type="break" data-jump="0" style="--m: 30" aria-label="09:30 – 10:00 · Doors &amp; coffee at the National Assembly"></button>
+                <button type="button" class="sched__map-block" data-type="keynote" data-jump="1" style="--m: 90" aria-label="10:00 – 11:30 · Presenting the Sofia Youth Declaration"></button>
+                <button type="button" class="sched__map-block" data-type="lab" data-jump="2" style="--m: 60" aria-label="11:30 – 12:30 · Roundtables: youth × ministries"></button>
+                <button type="button" class="sched__map-block" data-type="session" data-jump="3" style="--m: 30" aria-label="12:30 – 13:00 · Press briefing &amp; signatures"></button>
+                <button type="button" class="sched__map-block" data-type="break" data-jump="4" style="--m: 60" aria-label="13:00 · Farewell lunch &amp; Sofia city walk — open end"></button>
+              </div>
+              <div class="sched__map-hours" aria-hidden="true">
+                <span style="--h: 0">09:30</span><span style="--h: 30">10</span><span style="--h: 90">11</span><span style="--h: 150">12</span><span style="--h: 210">13</span><span class="is-end" style="--h: 270">14</span>
+              </div>
+            </div>
+            <div class="sched__item sched__item--break">
+              <div class="sched__row"><span class="sched__time">09:30</span><span class="sched__title">Doors &amp; coffee at the National Assembly</span><span class="badge badge--soft">welcome</span></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>10:00</b><small>11:30</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Presenting the Sofia Youth Declaration</span>
+                </span>
+                <span class="badge badge--yellow">keynote</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>Delegates hand the declaration to ministers and policymakers — on the record.</p></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>11:30</b><small>12:30</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Roundtables: youth × ministries</span>
+                </span>
+                <span class="badge badge--blue">lab</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>Education, justice and digital affairs — one table per ministry, delegates set the agenda.</p></div>
+            </div>
+            <div class="sched__item" data-sched>
+              <button class="sched__row" type="button" aria-expanded="false">
+                <span class="sched__time"><b>12:30</b><small>13:00</small></span>
+                <span class="sched__main">
+                  <span class="sched__title">Press briefing &amp; signatures</span>
+                </span>
+                <span class="badge">session</span>
+                <span class="sched__plus" aria-hidden="true"></span>
+              </button>
+              <div class="sched__body"><p>Ministries respond to the declaration publicly. Cameras welcome.</p></div>
+            </div>
+            <div class="sched__item sched__item--break">
+              <div class="sched__row"><span class="sched__time">13:00</span><span class="sched__title">Farewell lunch &amp; Sofia city walk</span><span class="badge badge--soft">open end</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPEAKERS ============ -->
+    <section class="section speakers" id="speakers">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="sec-num">04 — Speakers</p>
+          <h2><span class="line"><span class="line__inner">Who&rsquo;s on <em>stage</em></span></span></h2>
+          <p class="section-head__sub">Nine confirmed. Two open-call slots remain — one could be yours.</p>
+        </div>
+
+        <div class="roster" data-reveal-group>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">01</span>
+            <span class="roster__avatar" style="--av: var(--grad-1)">BB</span>
+            <div class="roster__who">
+              <h3>Bjørn Berge</h3>
+              <p>Deputy Secretary General · Council of Europe</p>
+            </div>
+            <p class="roster__topic">Keynote: Why Youth Matter</p>
+            <span class="roster__slot">Fri 09:30</span>
+          </article>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">02</span>
+            <span class="roster__avatar" style="--av: var(--grad-2)">AS</span>
+            <div class="roster__who">
+              <h3>Andreas Schleicher</h3>
+              <p>Director for Education &amp; Skills · OECD</p>
+            </div>
+            <p class="roster__topic">Politics, inequality &amp; education</p>
+            <span class="roster__slot">Fri 10:00</span>
+          </article>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">03</span>
+            <span class="roster__avatar" style="--av: var(--grad-3)">HA</span>
+            <div class="roster__who">
+              <h3>Helmut K. Anheier</h3>
+              <p>Professor of Sociology · Hertie School</p>
+            </div>
+            <p class="roster__topic">Corruption &amp; public trust</p>
+            <span class="roster__slot">Fri 11:00</span>
+          </article>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">04</span>
+            <span class="roster__avatar" style="--av: var(--grad-4)">MH</span>
+            <div class="roster__who">
+              <h3>Michiel van Hulten</h3>
+              <p>Transparency International EU</p>
+            </div>
+            <p class="roster__topic">Corruption &amp; public trust</p>
+            <span class="roster__slot">Fri 11:00</span>
+          </article>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">05</span>
+            <span class="roster__avatar" style="--av: var(--grad-5)">JR</span>
+            <div class="roster__who">
+              <h3>Jamila Raqib</h3>
+              <p>Director · Albert Einstein Institution</p>
+            </div>
+            <p class="roster__topic">Mindful activism</p>
+            <span class="roster__slot">Fri 11:45</span>
+          </article>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">06</span>
+            <span class="roster__avatar" style="--av: var(--grad-3)">CW</span>
+            <div class="roster__who">
+              <h3>Claire Wardle</h3>
+              <p>Misinformation researcher · Cornell</p>
+            </div>
+            <p class="roster__topic">Critical thinking 101</p>
+            <span class="roster__slot">Fri 13:30</span>
+          </article>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">07</span>
+            <span class="roster__avatar" style="--av: var(--grad-1)">IK</span>
+            <div class="roster__who">
+              <h3>Ivan Krastev</h3>
+              <p>Centre for Liberal Strategies · Sofia</p>
+            </div>
+            <p class="roster__topic">Case study: Bulgaria · Policy lab</p>
+            <span class="roster__slot">Fri 14:30</span>
+          </article>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">08</span>
+            <span class="roster__avatar" style="--av: var(--grad-5)">PB</span>
+            <div class="roster__who">
+              <h3>Petra Bayr</h3>
+              <p>Member of Parliament · Austria</p>
+            </div>
+            <p class="roster__topic">Sofia Youth Declaration</p>
+            <span class="roster__slot">Fri 17:15</span>
+          </article>
+          <article class="roster__row" data-reveal>
+            <span class="roster__idx" aria-hidden="true">09</span>
+            <span class="roster__avatar" style="--av: var(--grad-6)">MR</span>
+            <div class="roster__who">
+              <h3>Maria Ressa</h3>
+              <p>Nobel Peace laureate · Rappler</p>
+            </div>
+            <p class="roster__topic">Closing reflection</p>
+            <span class="roster__slot">Fri 17:45</span>
+          </article>
+          <a class="roster__row roster__row--you" data-reveal href="#register" data-tab-link="speaker">
+            <span class="roster__idx" aria-hidden="true">10</span>
+            <span class="roster__avatar roster__avatar--dashed">?</span>
+            <div class="roster__who">
+              <h3>You?</h3>
+              <p>Two open-call slots</p>
+            </div>
+            <p class="roster__topic roster__topic--link">Apply to speak →</p>
+            <span class="roster__slot">Fri · TBD</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REGISTER ============ -->
+    <section class="section register halftone" id="register">
+      <div class="container container--narrow">
+        <div class="section-head" data-reveal>
+          <p class="sec-num">05 — Registration</p>
+          <h2><span class="line"><span class="line__inner">Join us in <em>Sofia</em></span></span></h2>
+          <p class="section-head__sub">Rolling review — you&rsquo;ll hear back within 10 days.</p>
+        </div>
+
+        <div class="register__box" data-reveal>
+          <div class="seg" role="tablist" aria-label="Application type">
+            <span class="seg__indicator" id="segIndicator" aria-hidden="true"></span>
+            <button class="seg__btn is-active" id="tabParticipant" type="button" role="tab" aria-selected="true" aria-controls="panelParticipant" data-tab="participant">
+              <small class="seg__form">Form A</small> Participant
+            </button>
+            <button class="seg__btn" id="tabSpeaker" type="button" role="tab" aria-selected="false" aria-controls="panelSpeaker" data-tab="speaker">
+              <small class="seg__form">Form B</small> Speaker
+            </button>
+          </div>
+
+          <!-- Participant form -->
+          <div class="panel is-active" id="panelParticipant" role="tabpanel" aria-labelledby="tabParticipant">
+            <form class="form" id="formParticipant" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label for="pName">Full name</label>
+                  <input id="pName" name="name" type="text" required autocomplete="name" placeholder="Maria Ivanova">
+                </div>
+                <div class="field">
+                  <label for="pEmail">Email</label>
+                  <input id="pEmail" name="email" type="email" required autocomplete="email" placeholder="maria@example.com">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="pCountry">Country</label>
+                  <select id="pCountry" name="country" required>
+                    <option value="" selected disabled>Select country…</option>
+                    <option>Bulgaria</option><option>Austria</option><option>Belgium</option><option>Croatia</option>
+                    <option>Czechia</option><option>Denmark</option><option>Estonia</option><option>Finland</option>
+                    <option>France</option><option>Germany</option><option>Greece</option><option>Hungary</option>
+                    <option>Ireland</option><option>Italy</option><option>Latvia</option><option>Lithuania</option>
+                    <option>Netherlands</option><option>Poland</option><option>Portugal</option><option>Romania</option>
+                    <option>Slovakia</option><option>Slovenia</option><option>Spain</option><option>Sweden</option>
+                    <option>Other (Europe)</option><option>Other (outside Europe)</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="pOccupation">What do you do?</label>
+                  <input id="pOccupation" name="occupation" type="text" required placeholder="Student, activist, teacher…">
+                </div>
+              </div>
+              <fieldset class="field">
+                <legend>What pulls you in? <small>(up to 3)</small></legend>
+                <div class="chips" id="pInterests">
+                  <label class="chip-check"><input type="checkbox" name="interests" value="politics-education"><span>Politics &amp; education</span></label>
+                  <label class="chip-check"><input type="checkbox" name="interests" value="transparency"><span>Transparency</span></label>
+                  <label class="chip-check"><input type="checkbox" name="interests" value="activism"><span>Activism</span></label>
+                  <label class="chip-check"><input type="checkbox" name="interests" value="critical-thinking"><span>Critical thinking</span></label>
+                  <label class="chip-check"><input type="checkbox" name="interests" value="policy-lab"><span>Policy lab</span></label>
+                  <label class="chip-check"><input type="checkbox" name="interests" value="media-literacy"><span>Media literacy</span></label>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="pMotivation">Why you? <small>(2–3 sentences)</small></label>
+                <textarea id="pMotivation" name="motivation" rows="3" required placeholder="What would you bring back to your school, town or community?"></textarea>
+              </div>
+              <label class="check">
+                <input type="checkbox" name="newsletter">
+                <span>Keep me posted about future Better Democracy events</span>
+              </label>
+              <button class="btn btn--blue btn--submit" type="submit">
+                <span class="btn__label">Apply as participant</span>
+                <span class="btn__spinner" aria-hidden="true"></span>
+              </button>
+              <p class="form__note">Applications close 30 Aug 2026.</p>
+            </form>
+
+            <div class="success" hidden>
+              <svg class="success__check" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+                <circle class="success__circle" cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="3.5"/>
+                <path class="success__tick" d="M20 33.5 28.5 42 44 25" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h3>Application received!</h3>
+              <p class="success__text">Thanks, <b data-success-name>friend</b>. We&rsquo;ve emailed a confirmation to <b data-success-email>you</b>. Expect an answer within 10 days.</p>
+              <button class="btn btn--ghost" type="button" data-reset-form>Submit another application</button>
+            </div>
+          </div>
+
+          <!-- Speaker form -->
+          <div class="panel" id="panelSpeaker" role="tabpanel" aria-labelledby="tabSpeaker" hidden>
+            <form class="form" id="formSpeaker" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label for="sName">Full name</label>
+                  <input id="sName" name="name" type="text" required autocomplete="name" placeholder="Dr. Ana Petrova">
+                </div>
+                <div class="field">
+                  <label for="sEmail">Email</label>
+                  <input id="sEmail" name="email" type="email" required autocomplete="email" placeholder="ana@university.eu">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="sOrg">Organization</label>
+                  <input id="sOrg" name="org" type="text" required placeholder="University, NGO, newsroom…">
+                </div>
+                <div class="field">
+                  <label for="sRole">Your role</label>
+                  <input id="sRole" name="role" type="text" required placeholder="Researcher, journalist, founder…">
+                </div>
+              </div>
+              <div class="field">
+                <label for="sTitle">Session title</label>
+                <input id="sTitle" name="title" type="text" required placeholder="e.g. “Critical Thinking 101”">
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="sFormat">Format</label>
+                  <select id="sFormat" name="format" required>
+                    <option value="" selected disabled>Select format…</option>
+                    <option>45-min session</option>
+                    <option>60-min workshop</option>
+                    <option>Lab facilitation (90 min)</option>
+                    <option>Panel / roundtable seat</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="sExperience">Speaking experience</label>
+                  <select id="sExperience" name="experience" required>
+                    <option value="" selected disabled>Select…</option>
+                    <option>First time — and excited</option>
+                    <option>A few talks / workshops</option>
+                    <option>Seasoned speaker</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="sAbstract">Abstract <small>(what will the room actually do?)</small></label>
+                <textarea id="sAbstract" name="abstract" rows="4" required placeholder="150–250 words. We favour sessions where participants work, not just listen."></textarea>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="sLink">Link to your work <small>(optional)</small></label>
+                  <input id="sLink" name="link" type="url" placeholder="https://…">
+                </div>
+                <div class="field">
+                  <label for="sCity">Travelling from</label>
+                  <input id="sCity" name="city" type="text" required placeholder="City, country">
+                </div>
+              </div>
+              <label class="check">
+                <input type="checkbox" name="grant">
+                <span>Consider me for a travel grant (limited fund)</span>
+              </label>
+              <button class="btn btn--blue btn--submit" type="submit">
+                <span class="btn__label">Submit speaker proposal</span>
+                <span class="btn__spinner" aria-hidden="true"></span>
+              </button>
+              <p class="form__note">Call for speakers closes 1 Aug 2026.</p>
+            </form>
+
+            <div class="success" hidden>
+              <svg class="success__check" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+                <circle class="success__circle" cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="3.5"/>
+                <path class="success__tick" d="M20 33.5 28.5 42 44 25" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h3>Proposal received!</h3>
+              <p class="success__text">Thanks, <b data-success-name>friend</b>. A confirmation is on its way to <b data-success-email>you</b>. The committee replies by 15 Aug 2026.</p>
+              <button class="btn btn--ghost" type="button" data-reset-form>Submit another proposal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head" data-reveal>
+          <p class="sec-num">06 — FAQ</p>
+          <h2><span class="line"><span class="line__inner">Good to <em>know</em></span></span></h2>
+        </div>
+
+        <div class="faq__list" data-reveal-group>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary>Who can apply as a participant?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Young Europeans aged 16–30. No credentials needed — we select for motivation and mix, not CVs.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary>How much does it cost?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Free, including lunches and materials. Travel is self-funded; selected speakers can apply for a grant.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary>What language is the forum in?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>English. The opening keynote has simultaneous Bulgarian interpretation and is open to everyone in Sofia.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary>When will I hear back?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Within 10 days. Final participant list by 4 Sep; speakers announced 15 Aug.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary>Can I attend only one day?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>We prefer both — Friday writes the declaration, Saturday delivers it. Sofia locals can request a Day 1 pass.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary>I want to volunteer or partner<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__body"><p>Write to <a href="mailto:partnerships@betterdemocracy.eu">partnerships@betterdemocracy.eu</a> — we especially need Sofia-based volunteers.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__wm" aria-hidden="true">BETTER&nbsp;DEMOCRACY&nbsp;★</div>
+    <div class="container footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a class="footer__logo" href="#top" aria-label="Better Democracy — top">
+          <img src="assets/logo-full.png" alt="Better Democracy logo" width="220">
+        </a>
+        <p>A European non-profit teaching the craft of democracy — one city at a time.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@betterdemocracy.eu">hello@betterdemocracy.eu</a>
+        <a href="mailto:press@betterdemocracy.eu">press@betterdemocracy.eu</a>
+        <span>Registered in Tallinn, Estonia · NGO 80412-BD</span>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">LinkedIn</a>
+        <a href="#" rel="noopener">YouTube</a>
+      </div>
+      <div class="footer__col">
+        <h4>Sofia 2026</h4>
+        <a href="#program">Program</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#register">Register</a>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <span>© 2026 Better Democracy. All opinions our own — that&rsquo;s rather the point.</span>
+      <span>Privacy choices can be updated at any time.</span>
+      <button class="footer__cookie" id="cookieSettings" type="button">Cookie settings</button>
+    </div>
+  </footer>
+
+  <section class="cookie-consent" id="cookieConsent" aria-label="Cookie preferences" hidden>
+    <div class="cookie-consent__stamp" aria-hidden="true">BD</div>
+    <div class="cookie-consent__copy">
+      <p class="cookie-consent__kicker">Site cookies</p>
+      <h2>Manage your cookie preferences</h2>
+      <p>We use cookies to keep the site working, remember your choices and understand how visitors use Better Democracy.</p>
+    </div>
+    <div class="cookie-consent__actions">
+      <button class="btn btn--primary btn--sm" type="button" data-cookie-accept>Accept all</button>
+      <button class="btn btn--ghost btn--sm" type="button" data-cookie-manage aria-expanded="false">Manage</button>
+    </div>
+    <div class="cookie-consent__panel" id="cookiePanel" hidden>
+      <label class="cookie-toggle">
+        <span>
+          <b>Essential</b>
+          <small>Required for security, consent records and core site behavior.</small>
+        </span>
+        <input type="checkbox" checked disabled>
+      </label>
+      <label class="cookie-toggle">
+        <span>
+          <b>Preferences</b>
+          <small>Remember choices such as theme, language and saved form progress.</small>
+        </span>
+        <input type="checkbox" id="cookiePrefs">
+      </label>
+      <label class="cookie-toggle">
+        <span>
+          <b>Analytics</b>
+          <small>Help us measure visits, popular sections and registration flow performance.</small>
+        </span>
+        <input type="checkbox" id="cookieAnalytics">
+      </label>
+      <div class="cookie-consent__panel-actions">
+        <button class="btn btn--blue btn--sm" type="button" data-cookie-save>Save choices</button>
+        <button class="btn btn--ghost btn--sm" type="button" data-cookie-reject>Essential only</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
